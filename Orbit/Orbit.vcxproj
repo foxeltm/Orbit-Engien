@@ -19,12 +19,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Orbit\Log.h" />
     <ClInclude Include="src\Orbit.h" />
     <ClInclude Include="src\Orbit\Application.h" />
     <ClInclude Include="src\Orbit\Core.h" />
     <ClInclude Include="src\Orbit\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Orbit\Log.cpp" />
     <ClCompile Include="src\Orbit\Application.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -119,6 +121,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>OB_PLATFORM_WINDOWS;OB_BUILD_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Orbit\vendor\spdlog\include;</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -133,6 +137,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>OB_PLATFORM_WINDOWS;OB_BUILD_DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Orbit\vendor\spdlog\include;</AdditionalIncludeDirectories>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

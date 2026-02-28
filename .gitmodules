@@ -1,0 +1,3 @@
+[submodule "Orbit/vendor/spdlog"]
+	path = Orbit/vendor/spdlog
+	url = https://github.com/gabime/spdlog
