@@ -158,6 +158,10 @@
     <ClInclude Include="src\Orbit\Application.h" />
     <ClInclude Include="src\Orbit\Core.h" />
     <ClInclude Include="src\Orbit\EntryPoint.h" />
+    <ClInclude Include="src\Orbit\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\Orbit\Events\Event.h" />
+    <ClInclude Include="src\Orbit\Events\KeyEvent.h" />
+    <ClInclude Include="src\Orbit\Events\MouseEvent.h" />
     <ClInclude Include="src\Orbit\Log.h" />
   </ItemGroup>
   <ItemGroup>

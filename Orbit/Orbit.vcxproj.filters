@@ -19,6 +19,10 @@
     <ClInclude Include="src\Orbit\Log.h">
       <Filter>Orbit</Filter>
     </ClInclude>
+    <ClInclude Include="src\Orbit\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\Orbit\Events\Event.h" />
+    <ClInclude Include="src\Orbit\Events\KeyEvent.h" />
+    <ClInclude Include="src\Orbit\Events\MouseEvent.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Orbit\Application.cpp">
