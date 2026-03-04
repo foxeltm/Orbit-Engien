@@ -1,5 +1,5 @@
 #include "Application.h"
-#include "AplicationEvent.h"
+#include "Events/ApplicationEvent.h"
 #include "Log.h"
 //my application 
 
@@ -20,11 +20,11 @@ namespace Orbit
 		WindowResizeEvent e(1280, 720);
 		if (e.IsInCategory(EventCategoryApplication))
 		{
-			OB_TRACE(e);
+			OB_TRACE(e.ToString());
 		}
 		if (e.IsInCategory(EventCategoryInput))
 		{
-			OB_TRACE(e);
+			OB_TRACE(e.ToString());
 		}
 
 		while (true);
