@@ -4,6 +4,9 @@
     <Filter Include="Orbit">
       <UniqueIdentifier>{05C2D40D-71D6-FCBE-3A58-A01EA62BF9EF}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Orbit\Events">
+      <UniqueIdentifier>{49566503-35B9-F4A7-DE3E-2D5ECA80C02A}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Orbit.h" />
@@ -16,13 +19,22 @@
     <ClInclude Include="src\Orbit\EntryPoint.h">
       <Filter>Orbit</Filter>
     </ClInclude>
+    <ClInclude Include="src\Orbit\Events\ApplicationEvent.h">
+      <Filter>Orbit\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Orbit\Events\Event.h">
+      <Filter>Orbit\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Orbit\Events\KeyEvent.h">
+      <Filter>Orbit\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Orbit\Events\MouseEvent.h">
+      <Filter>Orbit\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\Orbit\Log.h">
       <Filter>Orbit</Filter>
     </ClInclude>
-    <ClInclude Include="src\Orbit\Events\ApplicationEvent.h" />
-    <ClInclude Include="src\Orbit\Events\Event.h" />
-    <ClInclude Include="src\Orbit\Events\KeyEvent.h" />
-    <ClInclude Include="src\Orbit\Events\MouseEvent.h" />
+    <ClInclude Include="src\obpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Orbit\Application.cpp">
@@ -31,5 +43,6 @@
     <ClCompile Include="src\Orbit\Log.cpp">
       <Filter>Orbit</Filter>
     </ClCompile>
+    <ClCompile Include="src\obpch.cpp" />
   </ItemGroup>
 </Project>

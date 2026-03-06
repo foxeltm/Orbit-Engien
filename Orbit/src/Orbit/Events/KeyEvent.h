@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Orbit
 {
 	class ORBIT_API KeyEvent : public Event

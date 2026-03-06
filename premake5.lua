@@ -18,6 +18,11 @@ project "Orbit"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+
+	pchheader "obpch.h"
+	pchsource "Orbit/src/obpch.cpp"
+
+
 	files
 	{
 		"%{prj.name}/src/**.h",
