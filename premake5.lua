@@ -42,9 +42,15 @@ project "Orbit"
 		"%{IncludeDir.GLFW}"
 	}
 
+	links 
+	{
+		"GLFW",
+		"opengl32.lib"
+	}
+
 	filter "system:windows"
 		cppdialect "C++20"
-		staticruntime "On"
+		staticruntime "Off"
 		systemversion "latest"
 
 		defines

@@ -2,6 +2,7 @@
 
 #include "Core.h"
 #include "Events/Event.h"
+#include "Window.h"
 
 namespace Orbit
 {
@@ -13,6 +14,9 @@ namespace Orbit
 		virtual ~Application();
 
 		void Run();
+	private:
+		std::unique_ptr<class Window> m_Window;
+		bool m_Running = true;
 	};
 
 	// To be defined in client

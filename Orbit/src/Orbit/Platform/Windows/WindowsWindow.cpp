@@ -1,5 +1,6 @@
 #include  "obpch.h"
 #include  "WindowsWindow.h"
+#include  "Orbit/Log.h"
 
 namespace Orbit
 {

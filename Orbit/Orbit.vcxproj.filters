@@ -7,6 +7,12 @@
     <Filter Include="Orbit\Events">
       <UniqueIdentifier>{49566503-35B9-F4A7-DE3E-2D5ECA80C02A}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Orbit\Platform">
+      <UniqueIdentifier>{F913328E-E5E1-2594-CE75-96BABAE201F9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Orbit\Platform\Windows">
+      <UniqueIdentifier>{33A7ACAF-1FA1-D501-080E-6C12F4A63B6E}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Orbit.h" />
@@ -34,6 +40,12 @@
     <ClInclude Include="src\Orbit\Log.h">
       <Filter>Orbit</Filter>
     </ClInclude>
+    <ClInclude Include="src\Orbit\Platform\Windows\WindowsWindow.h">
+      <Filter>Orbit\Platform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Orbit\Window.h">
+      <Filter>Orbit</Filter>
+    </ClInclude>
     <ClInclude Include="src\obpch.h" />
   </ItemGroup>
   <ItemGroup>
@@ -42,6 +54,9 @@
     </ClCompile>
     <ClCompile Include="src\Orbit\Log.cpp">
       <Filter>Orbit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Orbit\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Orbit\Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\obpch.cpp" />
   </ItemGroup>
