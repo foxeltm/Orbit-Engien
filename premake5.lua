@@ -10,6 +10,11 @@ workspace "Orbit"
 
  outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+ IncludeDir = {}
+IncludeDir["GLFW"] = "Orbit/vendor/GLFW/include"
+
+include "Orbit/vendor/GLFW"
+
 project "Orbit"
 	location "Orbit"
 	kind "SharedLib"
@@ -31,8 +36,10 @@ project "Orbit"
 	}
 
 	includedirs
-	{
-		"%{prj.name}/vendor/spdlog/include"
+	{	
+		"%{prj.name}/src",
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
 	}
 
 	filter "system:windows"
