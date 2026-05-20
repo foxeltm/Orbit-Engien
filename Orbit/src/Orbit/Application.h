@@ -3,6 +3,8 @@
 #include "Core.h"
 #include "Events/Event.h"
 #include "Window.h"
+#include "Events/ApplicationEvent.h"
+
 
 namespace Orbit
 {
@@ -14,7 +16,12 @@ namespace Orbit
 		virtual ~Application();
 
 		void Run();
+
+		void OnEvent(Event& e);
 	private:
+		bool OnWindowClose(WindowCloseEvent& e);
+
+
 		std::unique_ptr<class Window> m_Window;
 		bool m_Running = true;
 	};
